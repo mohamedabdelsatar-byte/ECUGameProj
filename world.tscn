@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://8vjp8oj73mus"]
+
+[ext_resource type="PackedScene" uid="uid://xhyqicq7o1ps" path="res://Scenes/player/player.tscn" id="1_f3sb7"]
+[ext_resource type="Texture2D" uid="uid://d3lqxnrsmbg2d" path="res://Scenes/world/grass_background.png" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://dgygm6xgn111v" path="res://Scenes/world/grass.tscn" id="5_036b0"]
+
+[node name="World" type="Node2D" unique_id=863860187]
+y_sort_enabled = true
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=771930831]
+repeat_size = Vector2(320, 192)
+
+[node name="Grass_Background" type="TextureRect" parent="Parallax2D" unique_id=1097851392]
+offset_right = 320.0
+offset_bottom = 192.0
+texture = ExtResource("1_fj7yv")
+stretch_mode = 1
+
+[node name="Player" parent="." unique_id=1295062809 instance=ExtResource("1_f3sb7")]
+position = Vector2(127, 68)
+
+[node name="Node2D2" parent="." unique_id=1733632256 instance=ExtResource("5_036b0")]
+position = Vector2(128, 104)
+
+[node name="Node2D4" parent="." unique_id=1302996778 instance=ExtResource("5_036b0")]
+position = Vector2(128, 120)
