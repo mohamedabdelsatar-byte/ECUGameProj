@@ -2,7 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://xhyqicq7o1ps" path="res://Scenes/player/player.tscn" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://d3lqxnrsmbg2d" path="res://Scenes/world/grass_background.png" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://bvt3eadytriuk" path="res://Scenes/world/tree.tscn" id="4_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dgygm6xgn111v" path="res://Scenes/world/grass.tscn" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://5c1hlwxq53jw" path="res://Scenes/NPCs/moai.tscn" id="5_dwbse"]
 
 [node name="World" type="Node2D" unique_id=863860187]
 y_sort_enabled = true
@@ -24,3 +26,9 @@ position = Vector2(128, 104)
 
 [node name="Node2D4" parent="." unique_id=1302996778 instance=ExtResource("5_036b0")]
 position = Vector2(128, 120)
+
+[node name="StaticBody2D" parent="." unique_id=986963097 instance=ExtResource("4_aqk2v")]
+position = Vector2(223, 67)
+
+[node name="TempNPC" parent="." unique_id=1928694706 instance=ExtResource("5_dwbse")]
+position = Vector2(56, 38)
